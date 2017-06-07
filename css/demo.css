@@ -1,0 +1,46 @@
+#main{
+	width: 500px;
+}
+
+#view{
+	position: absolute;
+    transform-style: flat;
+    top: 0px;
+    left: 0px;
+    width: 828px;
+    height: 1472px;
+    perspective: 959px;
+    overflow: hidden;
+    background-color: rgb(204, 204, 204);
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
+
+#stage{
+	position: absolute;
+    transform: translate3d(-50%, -50%, 0px) translate3d(414px, 736px, 959px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);
+    transform-style: preserve-3d;
+}
+
+#cube{
+	position: absolute;
+    transform: translate3d(-50%, -50%, 0px) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);
+    transform-style: preserve-3d;
+}
+
+#container{
+	position: absolute;
+    transform: translate3d(-50%, -50%, 0px) translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);
+    transform-style: preserve-3d;
+}
+
+.item{
+	position: absolute;
+    transform-style: preserve-3d;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    display: block;
+}
